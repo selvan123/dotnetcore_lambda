@@ -25,6 +25,7 @@ jobs:
           export DOTNET_ROOT=$HOME/.dotnet
           export PATH=$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools
           
+          dotnet tool uninstall -g Amazon.Lambda.Tools          
           dotnet tool install -g Amazon.Lambda.Tools
           cd MyFunction/src/MyFunction
           dotnet lambda package
