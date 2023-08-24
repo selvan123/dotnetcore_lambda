@@ -22,8 +22,8 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
-          #export DOTNET_ROOT=$HOME/.dotnet
-          #export PATH=$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools
+          export DOTNET_ROOT=$HOME/.dotnet
+          export PATH=$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools
           
           dotnet tool uninstall -g Amazon.Lambda.Tools          
           dotnet tool install -g Amazon.Lambda.Tools
