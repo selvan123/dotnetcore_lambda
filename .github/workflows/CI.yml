@@ -28,5 +28,5 @@ jobs:
           dotnet tool uninstall -g Amazon.Lambda.Tools          
           dotnet tool install -g Amazon.Lambda.Tools
           cd MyFunction/src/MyFunction
-          dotnet lambda package
+          sudo dotnet lambda package
           echo test, and deploy your project.
